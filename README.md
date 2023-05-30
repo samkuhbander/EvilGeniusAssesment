@@ -8,13 +8,14 @@ This program is designed to analyze game states in a match. It can process weapo
 ## Installation
 
 Clone the repository
+
 pip install -r requirements.txt
 
 
 ## Class Description: ProcessGameState
 This class is designed to handle game data processing tasks.
 
-#### Methods
+### Methods
 load_data(): Load the parquet file and store it in a DataFrame.
 
 clean_data(): Remove null values from the DataFrame.
@@ -39,9 +40,13 @@ entry_frequency(): Calculate the frequency of a team entering a boundary.
 The class ProcessGameState can be used to analyze the game data and we obtained the following results:
 
 We found four weapon classes: ['Rifle', 'Grenade', 'Pistols', 'SMG']
+
 We found twenty-five area names.
-We observed that the frequency of Team2 entering the light blue boundary on T side is approximately 6.67%.
+
+We observed that the frequency of Team2 entering the light blue boundary on T side is approximately 6.67%. So it is not a common strategy.
+
 The average timer for Team2 entering the light blue boundary on T side was found to be 01:07.
+
 The class also includes a method to generate a heatmap to examine Team2's positioning on the CT side within "BombsiteB".
 The heatmap is saved as Team2CTBombsiteB.png
 
